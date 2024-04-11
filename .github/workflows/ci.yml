@@ -22,5 +22,8 @@ jobs:
           java-version: '21'
           distribution: 'adopt'
 
+      - name: Install Gradle
+        run: sudo apt-get install gradle
+
       - name: Build with Gradle
-        run: ./gradlew build
+        run: gradle build
