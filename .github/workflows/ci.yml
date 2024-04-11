@@ -25,3 +25,6 @@ jobs:
       - name: Build with Gradle
         run: |
           ./gradlew build
+
+           - name: Save merged branches
+          run: echo "${{ github.event_name }} event triggered for ${GITHUB_REF#refs/heads/}" >> merged_branches.txt
