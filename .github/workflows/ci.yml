@@ -22,10 +22,5 @@ jobs:
           java-version: '21'
           distribution: 'adopt'
 
-      - name: Install Gradle
-        uses: gradle/wrapper-action@v2
-        with:
-          gradle-version: '7.4'
-
       - name: Build with Gradle
         run: ./gradlew build
